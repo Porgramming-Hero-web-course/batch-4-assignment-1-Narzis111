@@ -63,14 +63,19 @@ In addition to the coding exercises, this assignment includes a blog post on a T
    ```
 
 ### Running Solutions
-- Each problem can be executed individually by running:
-  ```bash
-  ts-node <file-path>
-  ```
-- For example:
-  ```bash
-  ts-node src/problem-1.ts
-  ```
+In the package.json file, the dev script is defined as:
+
+```typescript
+"scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/problem-number.ts"
+}
+```
+Running the Script
+To use the command, run:
+
+```bash
+npm run dev
+```
 
 ## Contributing
 If you have suggestions or improvements, feel free to fork the repo and open a pull request.
